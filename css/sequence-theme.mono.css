@@ -19,8 +19,8 @@
  *
  * Copyright © 2015 Ian Lunn Design Limited unless otherwise stated.
  */
-@font-face { font-family: blackfont; src: url('/Users/aashiamehta/Downloads/Aashia\ Website/mono/fonts/blackfont.ttf'); } 
-@font-face { font-family: stripedfont; src: url('/Users/aashiamehta/Downloads/Aashia\ Website/mono/fonts/stripedfont.ttf'); } 
+@font-face { font-family: blackfont; src: url('/Users/aashiamehta/Downloads/Aashia\ Website/fonts/blackfont.ttf'); } 
+@font-face { font-family: stripedfont; src: url('/Users/aashiamehta/Downloads/Aashia\ Website/fonts/stripedfont.ttf'); } 
 
 body,
 html,
