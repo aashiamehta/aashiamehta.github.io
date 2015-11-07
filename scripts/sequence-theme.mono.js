@@ -29,7 +29,7 @@ var options = {
   reverseWhenNavigatingBackwards: true,
   preloader: true,
   autoPlay: true,
-  autoPlayDelay: 3000
+  autoPlayDelay: 2000
 }
 
 
