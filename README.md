@@ -1,87 +1,54 @@
-# Mono - Sequence.js Theme
-
-> A minimal but colorful slider for showcasing one large product per slide
-
-This theme is powered by [Sequence.js](http://sequencejs.com/) - The responsive CSS animation framework for creating unique sliders, presentations, banners, and other step-based applications.
-
-Theme URL: [http://sequencejs.com/themes/mono/](http://sequencejs.com/themes/mono/)
+Overflow by HTML5 UP
+html5up.net | @n33co
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-Author: [Ian Lunn](http://ianlunn.co.uk/) - [GitHub](https://github.com/IanLunn) | [Twitter](https://twitter.com/IanLunn) | [Email](mailto:info@sequencejs.com)
+This is Overflow, a single page responsive site template by me, AJ, for HTML5 UP.
+As you can tell it's a bit unusual (it was inspired by a flowchart I was working
+on a few months back), but I think it'd make for a pretty cool portfolio. Includes
+a pop-up gallery, styling for all basic page elements, a handy configuration
+(see the top of js/init.js), and some experimental stuff I've been messing with
+lately (like the parallax background effect).
 
-## Getting Started
+Demo images* courtesy of the talented, the awesome, THE one and only Felicia Simion,
+a photographer whose works will make your head spin in awe. See more of it here:
 
-To add a Sequence.js theme to your web page, complete the following:
+http://ineedchemicalx.deviantart.com/
 
-1. Download and unzip your theme
-2. Move the `mono` folder to the same folder as the page you'd like the Sequence.js theme to appear on
-3. Add the theme's stylesheet within the `<head></head>` tags on your page, below existing stylesheets. For example:
-```html
-<link rel="stylesheet" href="mono/css/sequence-theme.mono.css" />
-```
+(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
+and/or use any of Felicia's work without her explicit permission!)
 
-4. From `mono/index.html`, copy everything inside the `<body></body>` tags, then paste into the page you'd like the theme to appear on.
-5. From `mono/index.html`, copy any `<script></script>` elements found toward the bottom of the page and paste just before the closing `</body>` tag. This should include a reference to the Sequence.js library, its third-party dependencies, and the theme's options, for example:
-```html
-<script src="mono/scripts/imagesloaded.pkgd.min.js"></script>
-<script src="mono/scripts/hammer.min.js"></script>
-<script src="mono/scripts/sequence.min.js"></script>
-<script src="mono/scripts/sequence-theme.mono.js"></script>
-```
+AJ
+n33.co @n33co dribbble.com/n33
 
-6. Save your file and view in the browser. You're done!
+PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
 
-### Customizing a Theme
 
-To customize how a theme behaves, its Sequence.js options can be changed in `mono/scripts/sequence-theme.mono.js`. See Options in the [documentation](http://www.sequencejs.com/documentation/#options).
+Credits:
 
-To customize how a theme looks and how its step's transition, refer to the theme's stylesheet: `mono/css/sequence-theme.mono.css`.
+	Demo images:
+		Felicia Simion (ineedchemicalx.deviantart.com)
+			"Sleepless in Vienna" (ineedchemicalx.deviantart.com/art/Sleepless-in-Vienna-322880007)
+			"Time goes by too fast" (ineedchemicalx.deviantart.com/art/Time-goes-by-too-fast-335982438)
+			"Kingdom of the Wind" (ineedchemicalx.deviantart.com/art/Kingdom-of-the-Wind-348268044)
+			"Ad infinitum" (ineedchemicalx.deviantart.com/art/Ad-infinitum-354203162)
+			"Dressed in Clarity" (ineedchemicalx.deviantart.com/art/Dressed-in-Clarity-331333716)
+			"Raven" (ineedchemicalx.deviantart.com/art/Raven-306468505)
+			"I'll have a cup of Disneyland, please" (ineedchemicalx.deviantart.com/art/I-ll-have-a-cup-of-Disneyland-please-325596442)
+			"Cherish" (ineedchemicalx.deviantart.com/art/Cherish-320041163)
+			"Different." (ineedchemicalx.deviantart.com/art/Different-353708988)
+			"History was made here" (ineedchemicalx.deviantart.com/art/History-was-made-here-366723812)
+			"People come and go and walk away" (ineedchemicalx.deviantart.com/art/People-come-and-go-and-walk-away-284244677)
 
-It is recommended to read [Setting Up a Theme](http://www.sequencejs.com/documentation/#setting-up-a-theme) in the documentation for an overview of how transitions are applied to Sequence.js steps.
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
 
-## Using Grunt.js to Develop a Theme
-
-If you are familiar with Grunt.js, you can use it to automate common development tasks. This however is optional and isn't required for a theme to work.
-
-Sequence.js and the themes it powers use [Grunt.js](http://gruntjs.com/) to automate useful tasks. With Grunt.js installed (see Grunt.js' [Getting Started](http://gruntjs.com/getting-started)), use the following command to install this theme's development dependencies:
-
-```
-npm install
-```
-
-Once development dependencies have installed you can use the commands `grunt serve` and `grunt`.
-
-### `grunt serve`
-
-This command will start a development environment with the following automated tasks:
-
-- Starts a [livereload](http://livereload.com/) session that will reload your browser whenever a file is changed (be sure to install [livereload](http://livereload.com/))
-- Opens your browser and navigates to `http://localhost:8000/`
-- Sets up a *watch* task to run the following sub-tasks:
-  - Update the version number of the following files when changed in `package.json`:
-    - `scripts/sequence-theme.mono.js`
-    - `scss/sequence-theme.mono.scss`
-    - `css/sequence-theme.mono.css`
-    - `bower.json`
-  - Process any `.scss` files found in the `scss` directory, autoprefix them and then copy to `css` and minify
-  - Refresh the browser when any changes are made in HTML, JS, CSS, or SCSS files
-
-You only need to run `grunt serve` per each development session as the *watch* task will continue to operate as you modify files.
-
-### `grunt`
-
-The `grunt` command is a manual version of the *watch* sub tasks listed for the `grunt serve` command.
-
-## Theme License
-
-This theme is made available under a [GPLv3 license](http://sequencejs.com/licenses/#free-theme).
-
-Copyright © 2015 [Ian Lunn Design Limited](http://ianlunn.co.uk/)
-
-## Sequence.js License
-
-This theme is powered by [Sequence.js](http://sequencejs.com/). Sequence.js is made available under the following licenses where applicable:
-
-- [GPLv3](http://sequencejs.com/licenses/#personal-open-source-overview) - For personal and open-source projects
-- [Commercial License](http://sequencejs.com/licenses/#commercial-overview) - For commercial projects
-- [Commercial OEM License](http://sequencejs.com/licenses/#commercial-oem-overview) - For commercial OEM projects
+	Other:
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		CSS3 Pie (css3pie.com)
+		background-size polyfill (github.com/louisremi)
+		Respond.js (j.mp/respondjs)
+		jquery.poptrox (n33.co)
+		jquery.scrolly (n33.co)
+		Skel (skel.io)
