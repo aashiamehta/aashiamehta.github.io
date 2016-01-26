@@ -1,18 +1,66 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "aashiamehta@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $name . " " . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+<?php
+/* Set e-mail recipient */
+$myemail  = "aashiamehta@gmail.com";
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+/* Check all form inputs using check_input function */
+$name = check_input($_POST['name'], "Enter your name");
+$email    = check_input($_POST['email']);
+$message = check_input($_POST['message'], "Write your comments");
+
+/* If e-mail is not valid show error message */
+if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
+{
+    show_error("E-mail address not valid");
+}
+
+/* If URL is not valid set $website to empty */
+if (!preg_match("/^(https?:\/\/+[\w\-]+\.[\w\-]+)/i", $website))
+{
+    $website = '';
+}
+
+/* Let's prepare the message for the e-mail */
+$message = "Hello!
+
+Your contact form has been submitted by: Aashia Mehta
+
+Name: $name
+E-mail: $email
+
+Message:
+$message
+
+End of message
+";
+
+/* Send the message using mail() function */
+mail($myemail, $subject, $message);
+
+/* Functions we used */
+function check_input($data, $problem='')
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    if ($problem && strlen($data) == 0)
+    {
+        show_error($problem);
     }
+    return $data;
+}
+
+function show_error($myError)
+{
+?>
+    <html>
+    <body>
+
+    <b>Please correct the following error:</b><br />
+    <?php echo $myError; ?>
+
+    </body>
+    </html>
+<?php
+exit();
+}
 ?>
