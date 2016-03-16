@@ -1,66 +1,28 @@
 <?php
-/* Set e-mail recipient */
-$myemail  = "aashiamehta@gmail.com";
-
-/* Check all form inputs using check_input function */
-$name = check_input($_POST['name'], "Enter your name");
-$email    = check_input($_POST['email']);
-$message = check_input($_POST['message'], "Write your comments");
-
-/* If e-mail is not valid show error message */
-if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
-{
-    show_error("E-mail address not valid");
+if(isset($_POST["submit"])){
+// Checking For Blank Fields..
+if($_POST["name"]==""||$_POST["email"]==""||$_POST["message"]==""){
+echo "Fill All Fields..";
+}else{
+// Check if the "Sender's Email" input field is filled out
+$email=$_POST['email'];
+// Sanitize E-mail Address
+$email =filter_var($email, FILTER_SANITIZE_EMAIL);
+// Validate E-mail Address
+$email= filter_var($email, FILTER_VALIDATE_EMAIL);
+if (!$email){
+echo "Invalid Sender's Email";
 }
-
-/* If URL is not valid set $website to empty */
-if (!preg_match("/^(https?:\/\/+[\w\-]+\.[\w\-]+)/i", $website))
-{
-    $website = '';
+else{
+$message = $_POST['message'];
+$headers = 'From:'. $email2 . "\r\n"; // Sender's Email
+$headers .= 'Cc:'. $email2 . "\r\n"; // Carbon copy to Sender
+// Message lines should not exceed 70 characters (PHP rule), so wrap it
+$message = wordwrap($message, 70);
+// Send Mail By PHP Mail Function
+mail("aashiamehta@gmail.com", $message, $headers);
+echo "Your mail has been sent successfuly ! Thank you for your feedback";
 }
-
-/* Let's prepare the message for the e-mail */
-$message = "Hello!
-
-Your contact form has been submitted by: Aashia Mehta
-
-Name: $name
-E-mail: $email
-
-Message:
-$message
-
-End of message
-";
-
-/* Send the message using mail() function */
-mail($myemail, $subject, $message);
-
-/* Functions we used */
-function check_input($data, $problem='')
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    if ($problem && strlen($data) == 0)
-    {
-        show_error($problem);
-    }
-    return $data;
 }
-
-function show_error($myError)
-{
-?>
-    <html>
-    <body>
-
-    <b>Please correct the following error:</b><br />
-    <?php echo $myError; ?>
-
-    </body>
-    </html>
-<?php
-exit();
 }
 ?>
