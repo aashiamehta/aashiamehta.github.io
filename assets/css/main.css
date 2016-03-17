@@ -1801,7 +1801,7 @@
 				top: 0;
 				width: 50%;
 				height: 100%;
-				background: #152E33;
+				background: #000000;
 				overflow: hidden;
 			}
 
@@ -1848,7 +1848,7 @@
 
 			.box.style2 header {
 				display: inline-block;
-				background: #fff;
+				background: #e97770;
 				padding: 2em 3em 2em 3em;
 				margin: 0;
 			}
