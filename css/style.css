@@ -1,7 +1,6 @@
 :root {
   --bottom-bar: #563f46;
 	--accent: #8ca3a3;
-	--hover: #c8c3cc;
 	--main: #96858F;
 }
 
@@ -84,11 +83,11 @@
 }
 
 .st-container > input:hover + .alink{
-	background: var(--hover);
+	background: var(--main);
 }
 
 .st-container > input:hover + .alink:after {
-	border-bottom-color: var(--hover);
+	border-bottom-color: var(--main);
 }
 
 .st-scroll,
