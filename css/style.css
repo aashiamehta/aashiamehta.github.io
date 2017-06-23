@@ -87,7 +87,7 @@
 }
 
 .st-container > input:hover + .alink:after {
-	border-bottom-color: var(--main);
+	border-bottom-color: var(--hover);
 }
 
 .st-scroll,
@@ -271,6 +271,18 @@
 	margin: 10px 0 0 0;
 	-webkit-backface-visibility: hidden;
 }
+
+.st-panel pre {
+  color: #8b8b8b;
+  font-size: 16px;
+  padding: 20px;
+  width: 50%;
+  left: 25%;
+  top: 50%;
+  margin: 10px 0 0 0;
+  font-family: 'Lato', sans-serif;
+}
+
 #st-control-1:checked ~ .st-scroll #st-panel-1 p,
 #st-control-2:checked ~ .st-scroll #st-panel-2 p,
 #st-control-3:checked ~ .st-scroll #st-panel-3 p{
