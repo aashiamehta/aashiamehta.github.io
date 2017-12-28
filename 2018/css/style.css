@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body {
+  margin: 0;
+  background: #6D7993;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ------------------ HOME ------------------ */
+
+#particles {
+  z-index: 4;
+  height: 100%;
+  background-color: #6D7993;
+}
+
+.home {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font: 100 10vh/1 Roboto;
+  text-align: center;
+  color: #6D7993;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+h1 span {
+  background-color: #ffffff;
+  padding: 0 2rem;
+}
+
+
+/* ------------------ EDUCATION ------------------ */
+
+.education {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  font: 100 10vh/3 Roboto;
+
+}
+
+/* ------------------ CONTACT ------------------ */
+
+.contact {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+
+/* ------------------ NAVIGATION ------------------ */
+
+.navbar {
+  background-color:transparent;
+  border-color:transparent;
+  color: #ffffff;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+  color: #ffffff;
+}
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navBtn {
+  float: none;
+  font: 100 2vh/2 Roboto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
