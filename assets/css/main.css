@@ -745,6 +745,7 @@
 	  right: 0;
 	  bottom: 0;
 	  background: #836997;
+	  background-size: auto, 100% 100%;
 	}
 
 	body {
