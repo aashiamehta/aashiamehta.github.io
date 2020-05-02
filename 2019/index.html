@@ -13,16 +13,19 @@
 	<!-- Mobile Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Favicon -->
+	<!-- Favicons -->
 	<link rel="shortcut icon" href="img/favicon.ico">
 
 	<!-- Google Webfonts -->
-	<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Avenir:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Add custom CSS here -->
+	<link href="css/custom.css" rel="stylesheet">
 
 	<!-- Modernizer -->
 	<script src="js/modernizr.custom.js"></script>
@@ -41,69 +44,76 @@
 <body>
 
 	<!-- Header -->
-	<nav class="navbar navbar-default navbar-fixed-top header">
-    <div class="container text-center">
+	<nav class="navbar navbar-default navbar-fixed-top header" role="navigation">
+		<div class="container">
 			<div class="navbar-header">
-				<div data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</div>
+				</button>
+				<a class="navbar-brand logo" href="./index.html"><i class="fa fa-pencil-square"></i>Aashia</a>
 			</div>
-        <div id="navbar" class="navbar-collapse">
-            <ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="resume.pdf">Resume</a></li>
-							<li><a href="mailto:aashiamehta@gmail.com">Contact</a></li>
-            </ul>
-        </div>
-    </div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.pdf">Resume</a></li>
+					<li><a href="mailto:aashiamehta@gmail.com">Contact</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
 	</nav>
 	<!-- Header -->
 
-	<!-- Top Content -->
+	<!-- top Content -->
 	<div class="top-header">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<div id="photos">
-						<center><img id = "me" src="me.png" class="img-responsive" height="420" width="420"/></center>
-					</div>
-				</div>
-				<center><div class="col-lg-6">
 					<div class="top-message">
 						<h1>Aashia Mehta</h1>
 						<h3>Computer Science Student</h3>
-						<p>I’m an incoming senior pursuing a Bachelor's degree in Computer Science with a minor in Applied Statistics at the University of Michigan in Ann Arbor, MI. I was born and raised in the Bay Area. I am currently a Software Engineering Intern at Facebook. Previously, I worked as an Engineering Practicum Intern at Google.</p>
+						<hr class="top-divider">
+						<br>
+						<p>I’m an incoming junior pursuing a Bachelor's degree in Computer Science at the University of Michigan in Ann Arbor, MI. I was born and raised in the Bay Area. I am currently an Engineering Practicum Intern at Google in Mountain View, CA.</p>
 					</div>
-				</div></center>
+				</div>
+				<div class="col-lg-6">
+					<div id="photos">
+						<img src="me.png" height="430" width="430"/>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Top Content -->
+	<!-- top Content -->
 
 	<!-- Info Content -->
 	<div class="wrap-content">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<center>
+					<img src="coursework.png" height="300" width="300"/>
+				</div>
+				<div class="col-lg-5">
+					<hr class="heading-spacer">
 					<div class="clearfix"></div>
 					<h2>Coursework</h2>
 					<p class="lead">
-						Operating Systems (EECS 482)<br>
-						Databases (EECS 484)<br>
-						Web Systems (EECS 485)<br>
 						Intro to Computer Architecture (EECS 370)<br>
 						Theory of Computation (EECS 376) <br>
 						Data Structures and Algorithms (EECS 281)<br>
-				</div></center>
-				<div class="col-lg-5">
-					<center><img class="img-responsive" src="coursework.png" height="300" width="300"/></center>
+						Programming and Introductory Data Structures (EECS 280)<br>
+						Discrete Mathematics (EECS 203)<br>
+					Elementary Programming Concepts (EECS 183)</p>
 				</div>
 			</div>
 		</div>
+		<!-- /.container -->
 	</div>
 	<!-- Info Content -->
 
@@ -112,21 +122,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<center><img class="img-responsive" src="organization.png" height="300" width="300"/></center>
-				</div>
-				<center><div class="col-lg-6">
+					<hr class="heading-spacer1">
 					<div class="clearfix"></div>
 					<h2>Organizations</h2>
-					<p class="lead">
-						University of Michigan Instructional Aide Staff<br>
-						MHacks Director<br>
+					<p class="lead">MHacks Director<br>
 						Girls in Electrical Engineering and Computer Science (GEECS)<br>
 						Kappa Theta Pi Professional Tech Fraternity<br>
 						CroMa (Crowds and Machines) Lab Researcher<br>
-					  Indian American Student Association (IASA)</p>
-				</div><center>
+					Indian American Student Association (IASA)</p>
+				</div>
+				<div class="col-lg-6">
+					<img src="organization.png" height="300" width="300"/>
+				</div>
 			</div>
 		</div>
+		<!-- /.container -->
 	</div>
 	<!-- Info Content -->
 
@@ -134,7 +144,11 @@
 	<div class="wrap-content">
 		<div class="container">
 			<div class="row">
-				<center><div class="col-lg-6">
+				<div class="col-lg-7">
+					<img src="hobbies.png" height="300" width="300"/>
+				</div>
+				<div class="col-lg-5">
+					<hr class="heading-spacer">
 					<div class="clearfix"></div>
 					<h2>Hobbies</h2>
 					<p class="lead">Knitting a sweater<br>
@@ -142,11 +156,9 @@
 						Swimming<br>
 					Sipping pearl milk tea</p>
 				</div>
-				<div class="col-lg-6">
-					<center><img class="img-responsive" src="hobbies.png" height="300" width="300"/></center>
-				</div></center>
 			</div>
 		</div>
+		<!-- /.container -->
 	</div>
 	<!-- Info Content -->
 
