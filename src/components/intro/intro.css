@@ -90,9 +90,13 @@
   right: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .i {
     flex-direction: column;
+  }
+
+  .i-bg {
+    clip-path: none;
   }
 
   .i-left-wrapper {
@@ -106,6 +110,10 @@
 
   .i-desc{
     display: none;
+  }
+
+  .i-title-item {
+    justify-content: center;
   }
   
 }

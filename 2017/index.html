@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aashia's Personal Website"/>
+  <meta name="author" content="Aashia Mehta"/>
+
+  <title>Aashia Mehta</title>
+
+  <!-- CSS -->
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <!-- JS -->
+  <script type="text/javascript" src="js/js.js"></script>
+  <script src="https://use.fontawesome.com/5532570f5d.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="st-container">
+      <script>
+      function randomFrom(array){
+        return array[Math.floor(Math.random() * array.length)];
+      }
+      function randomScheme(){
+        var func = randomFrom(['scheme1', 'scheme2', 'scheme3', 'scheme4', 'scheme5']);
+        window[func]();
+      }
+      function scheme1() {
+        var color1 = "rgb(44, 53, 49)";
+        var color2 = "rgb(17, 100, 102)";
+        var color3 = "rgb(217, 176, 140)";
+        document.querySelector("html").style.setProperty("--bottom-bar", color1);
+        document.querySelector("html").style.setProperty("--accent", color2);
+        document.querySelector("html").style.setProperty("--main", color3);
+      }
+      function scheme2() {
+        var color1 = "rgb(114, 47, 90)";
+        var color2 = "rgb(121, 175, 178)";
+        var color3 = "rgb(31, 98, 101)";
+        document.querySelector("html").style.setProperty("--bottom-bar", color1);
+        document.querySelector("html").style.setProperty("--accent", color2);
+        document.querySelector("html").style.setProperty("--main", color3);
+      }
+      function scheme3() {
+        var color1 = "rgb(31, 126, 152)";
+        var color2 = "rgb(178, 84, 113)";
+        var color3 = "rgb(101, 31, 53)";
+        document.querySelector("html").style.setProperty("--bottom-bar", color1);
+        document.querySelector("html").style.setProperty("--accent", color2);
+        document.querySelector("html").style.setProperty("--main", color3);
+      }
+      function scheme4() {
+        var color1 = "rgb(90, 85, 96)";
+        var color2 = "rgb(155, 120, 111)";
+        var color3 = "rgb(70, 52, 78)";
+        document.querySelector("html").style.setProperty("--bottom-bar", color1);
+        document.querySelector("html").style.setProperty("--accent", color2);
+        document.querySelector("html").style.setProperty("--main", color3);
+      }
+      function scheme5() {
+        var color1 = "rgb(42, 27, 61)";
+        var color2 = "rgb(216, 63, 135)";
+        var color3 = "rgb(68, 49, 141)";
+        document.querySelector("html").style.setProperty("--bottom-bar", color1);
+        document.querySelector("html").style.setProperty("--accent", color2);
+        document.querySelector("html").style.setProperty("--main", color3);
+      }
+      </script>
+
+      <!-- Navigation -->
+      <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+      <a class="alink" href="#st-panel-1">HOME</a>
+      <input type="radio" name="radio-set" id="st-control-2"/>
+      <a class="alink" href="#st-panel-2">EDUCATION</a>
+      <input type="radio" name="radio-set" id="st-control-3"/>
+      <a class="alink" href="#st-panel-3">CONTACT</a>
+      <div class="st-scroll">
+
+        <!-- Home -->
+        <section class="st-panel" id="st-panel-1">
+          <div class="st-deco" data-icon="2"></div>
+          <h2>AASHIA MEHTA</h2>
+          <p>Programmer from the Bay Area<br>Here is my <a href="resume.pdf">résumé</a>!
+            <br><i onclick="randomScheme()" class="fa fa-random"></i>
+          </p>
+        </section>
+
+        <!-- Education -->
+        <section class="st-panel st-color" id="st-panel-2">
+          <div class="st-deco" data-icon=">"></div>
+          <h2>EDUCATION</h2>
+          <p>Monta Vista High School (2013-2014)<br>
+            Los Altos High School (2015-2017)<br>
+            University of Michigan, Ann Arbor (2017-2021)
+          </p>
+        </section>
+
+        <!-- Contact -->
+        <section class="st-panel" id="st-panel-3">
+          <div class="st-deco" data-icon="M"></div>
+          <h2>CONTACT</h2>
+          <p><i class="fa fa-envelope-square"></i>&nbsp;&nbsp;&nbsp;<a href="mailto:aashia@umich.edu?Subject=Hey%20Aashia!">Email<br>
+            <i class="fa fa-linkedin-square"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/aashia" target="_blank">LinkedIn<br>
+              <i class="fa fa-facebook-square"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/itsaashia" target="_blank">Facebook</span><br>
+                <i class="fa fa-github-square"></i>&nbsp;&nbsp;&nbsp;<a href="https://github.com/aashiamehta" target="_blank">GitHub</span>
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </body>
+      </html>
