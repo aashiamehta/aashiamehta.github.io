@@ -7,7 +7,8 @@ const About = () => {
         <div className="pl-texts">
           <h1 className="pl-title">About Me</h1>
           <p className="pl-desc">
-            I am currently pursuing a part-time Master's degree in Computer Science at Georgia Institute of Technology.
+            I work full-time as a software engineer at Meta. In addition, I am pursuing a part-time Master's degree 
+            in Computer Science at Georgia Institute of Technology.
             I graduated from the University of Michigan in Ann Arbor with a Bachelor's degree in Computer Science
             and a minor in Applied Statistics in 2020.
           </p>
